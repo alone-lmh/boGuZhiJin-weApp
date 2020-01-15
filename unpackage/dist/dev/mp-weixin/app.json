@@ -1,11 +1,12 @@
 {
   "pages": [
+    "pages/news/index",
     "pages/imporant/index",
     "pages/shi/index",
     "pages/movies/index",
-    "pages/news/index",
     "pages/shi/details",
-    "pages/imporant/details"
+    "pages/imporant/details",
+    "pages/news/details"
   ],
   "subPackages": [],
   "window": {
@@ -46,6 +47,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap73.json"
+  "usingComponents": {}
 }

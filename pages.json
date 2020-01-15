@@ -1,11 +1,16 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		 {
+		{
+			"path": "pages/news/index",
+			"style": {
+				"navigationBarTitleText": "博古知今"
+			}
+		}, {
 			"path": "pages/imporant/index",
 			"style": {
 				"navigationBarTitleText": "博古知今"
 			}
-		},{
+		}, {
 			"path": "pages/shi/index",
 			"style": {
 				"navigationBarTitleText": "博古知今"
@@ -16,17 +21,18 @@
 				"navigationBarTitleText": "博古知今"
 			}
 		}, {
-			"path": "pages/news/index",
+			"path": "pages/shi/details",
 			"style": {
-				"navigationBarTitleText": "博古知今"
+				"navigationBarTitleText": "诗词歌赋"
+			}
+		}, {
+			"path": "pages/imporant/details",
+			"style": {
+				"navigationBarTitleText": "古今要事"
 			}
 		}
 	    ,{
-            "path" : "pages/shi/details",
-            "style" : {"navigationBarTitleText": "古诗"}
-        }
-        ,{
-            "path" : "pages/imporant/details",
+            "path" : "pages/news/details",
             "style" : {}
         }
     ],

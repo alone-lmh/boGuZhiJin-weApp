@@ -1,9 +1,9 @@
 <template>
-	<view v-show="loadEnd" id="details">
+	<view v-show="loadEnd" id="importantDetails">
 		<text class="title">{{details.title}}</text>
 		<text class="date">{{details.lunar}}</text>
-		<cover-image :src="details.pic" alt="http://img.ibabyzone.cn/album/16/38/84/4263200421252874.gif"></cover-image>
-		<text class="content">{{details.des}}</text>
+		<cover-image :src="details.pic" alt="图片加载失败"></cover-image>
+		<rich-text class="content">{{details.des}}</rich-text>
 	</view>
 </template>
 
@@ -37,7 +37,7 @@
 </script>
 
 <style>
-	#details {
+	#importantDetails {
 		height: 100%;
 		background-image: url("http://img3.imgtn.bdimg.com/it/u=1755359665,1374319544&fm=26&gp=0.jpg");
 		background-size: 100% 100%;

@@ -1,0 +1,1 @@
+<view hidden="{{!(loadEnd)}}" id="newsDetails"><text class="title">{{details.title}}</text><text class="from">{{details.source}}</text><rich-text class="content" nodes="{{details.body}}"></rich-text></view>
