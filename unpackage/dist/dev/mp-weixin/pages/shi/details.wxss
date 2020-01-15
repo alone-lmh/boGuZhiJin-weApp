@@ -1,0 +1,31 @@
+
+#details {
+	height: 100%;
+	background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579063894132&di=2e9a140e13e98600feda9702cade7eb4&imgtype=0&src=http%3A%2F%2Fpic79.nipic.com%2Ffile%2F20151005%2F21022608_164420192000_2.jpg");
+	background-size: 100% 100%;
+	padding: 0.5em;
+	overflow: auto;
+}
+text {
+	display: block;
+	padding: 0.5em;
+}
+.title,
+.author {
+	text-align: center;
+}
+.title {
+	padding-bottom: 0;
+}
+.author {
+	color: #666;
+}
+.content {
+	text-indent: 2em;
+}
+.other {
+	font-weight: bold;
+	padding-bottom: 0;
+	color: #666666;
+}
+

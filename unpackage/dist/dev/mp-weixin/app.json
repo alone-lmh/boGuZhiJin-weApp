@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/shi/index",
+    "pages/imporant/index",
+    "pages/movies/index",
+    "pages/news/index",
+    "pages/shi/details"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "博古知今",
+    "navigationBarBackgroundColor": "#000",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#eee",
+    "selectedColor": "#fff",
+    "backgroundColor": "#000",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/shi/index",
+        "iconPath": "static/shi.png",
+        "selectedIconPath": "static/shi-sel.png",
+        "text": "诗词歌赋"
+      },
+      {
+        "pagePath": "pages/imporant/index",
+        "iconPath": "static/important.png",
+        "selectedIconPath": "static/important-sel.png",
+        "text": "古今要事"
+      },
+      {
+        "pagePath": "pages/news/index",
+        "iconPath": "static/news.png",
+        "selectedIconPath": "static/news-sel.png",
+        "text": "新闻热点"
+      },
+      {
+        "pagePath": "pages/movies/index",
+        "iconPath": "static/movies.png",
+        "selectedIconPath": "static/movies-sel.png",
+        "text": "影视之家"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap40.json"
+}

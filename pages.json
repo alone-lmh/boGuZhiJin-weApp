@@ -1,0 +1,62 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/shi/index",
+			"style": {
+				"navigationBarTitleText": "博古知今"
+			}
+		}, {
+			"path": "pages/imporant/index",
+			"style": {
+				"navigationBarTitleText": "博古知今"
+			}
+		}, {
+			"path": "pages/movies/index",
+			"style": {
+				"navigationBarTitleText": "博古知今"
+			}
+		}, {
+			"path": "pages/news/index",
+			"style": {
+				"navigationBarTitleText": "博古知今"
+			}
+		}
+	    ,{
+            "path" : "pages/shi/details",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "博古知今",
+		"navigationBarBackgroundColor": "#000",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#eee",
+		"selectedColor": "#fff",
+		"backgroundColor": "#000",
+		"borderStyle": "black",
+		"list": [{
+			"pagePath": "pages/shi/index",
+			"iconPath": "static/shi.png",
+			"selectedIconPath": "static/shi-sel.png",
+			"text": "诗词歌赋"
+		}, {
+			"pagePath": "pages/imporant/index",
+			"iconPath": "static/important.png",
+			"selectedIconPath": "static/important-sel.png",
+			"text": "古今要事"
+		}, {
+			"pagePath": "pages/news/index",
+			"iconPath": "static/news.png",
+			"selectedIconPath": "static/news-sel.png",
+			"text": "新闻热点"
+		}, {
+			"pagePath": "pages/movies/index",
+			"iconPath": "static/movies.png",
+			"selectedIconPath": "static/movies-sel.png",
+			"text": "影视之家"
+		}]
+	}
+}

@@ -1,0 +1,164 @@
+
+.refreshBox {
+	margin: 0 auto;
+	width: 100%;
+	height: 100rpx;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	max-height: 300rpx;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	-webkit-transform: translateY(-100rpx);
+	        transform: translateY(-100rpx);
+}
+.animationSmall {
+	-webkit-animation: small 1.1s both;
+	        animation: small 1.1s both;
+}
+@-webkit-keyframes small {
+0% {
+		-webkit-transform: scale(1);
+		        transform: scale(1)
+}
+20% {
+		-webkit-transform: scale(1.4);
+		        transform: scale(1.4)
+}
+100% {
+		-webkit-transform: scale(0);
+		        transform: scale(0)
+}
+}
+@keyframes small {
+0% {
+		-webkit-transform: scale(1);
+		        transform: scale(1)
+}
+20% {
+		-webkit-transform: scale(1.4);
+		        transform: scale(1.4)
+}
+100% {
+		-webkit-transform: scale(0);
+		        transform: scale(0)
+}
+}
+.refreshText {
+	width: 150rpx;
+	height: 26rpx;
+	font-size: 24rpx;
+	line-height: 26rpx;
+	text-align: center;
+	border-radius: 26rpx;
+}
+.refresh {
+	min-width: 50rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	height: 50rpx;
+	background: #FFFFFF;
+	box-shadow: 0 0 16rpx 0 rgba(0, 0, 0, 0.10);
+	border-radius: 50rpx;
+}
+.refreshCirle {
+	width: 26rpx;
+	height: 26rpx;
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
+	border: 6rpx solid black;
+	border-bottom-color: transparent;
+	border-top-color: transparent;
+}
+.animation {
+	-webkit-animation: rotate 1.1s infinite;
+	        animation: rotate 1.1s infinite;
+	-webkit-animation-timing-function: cubic-bezier(0.3, 1.65, 0.7, -0.65);
+	        animation-timing-function: cubic-bezier(0.3, 1.65, 0.7, -0.65);
+}
+@-webkit-keyframes rotate {
+0% {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+}
+100% {
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
+}
+}
+@keyframes rotate {
+0% {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+}
+100% {
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
+}
+}
+.true {
+	color: black;
+}
+.iconRefreshed {
+	width: 34rpx;
+	height: 34rpx;
+}
+.floter {
+	width: 100%;
+	height: 100rpx;
+	opacity: 0.5;
+	text-align: center;
+}
+.noCard {
+	width: 90%;
+	height: 200rpx;
+	margin: auto;
+	background-color: white;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	color: #999999;
+	box-shadow: 0 0 10rpx 0 rgba(0, 0, 0, 0.10);
+	border-radius: 10rpx;
+}
+
+/* 回到顶部的按钮 */
+.totop {
+	z-index: 9990;
+	position: fixed !important;
+	/* 避免编译到H5,在多mescroll中定位失效 */
+	right: 20rpx;
+	bottom: 120rpx;
+	width: 72rpx;
+	height: 72rpx;
+	border-radius: 50%;
+	opacity: 1;
+}
+.fade-in {
+	-webkit-animation: mescrollFadeIn .3s linear forwards;
+	animation: mescrollFadeIn .3s linear forwards;
+}
+

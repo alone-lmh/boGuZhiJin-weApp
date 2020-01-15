@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "博古知今",
+  "usingComponents": {
+    "uni-notice-bar": "/components/uni-notice-bar/uni-notice-bar",
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "uni-search-bar": "/components/uni-search-bar/uni-search-bar",
+    "uni-list": "/components/uni-list/uni-list",
+    "uni-list-item": "/components/uni-list-item/uni-list-item",
+    "sib-list": "/components/sib-list/sib-list"
+  }
+}
