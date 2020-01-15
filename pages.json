@@ -1,12 +1,12 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/shi/index",
+		 {
+			"path": "pages/imporant/index",
 			"style": {
 				"navigationBarTitleText": "博古知今"
 			}
-		}, {
-			"path": "pages/imporant/index",
+		},{
+			"path": "pages/shi/index",
 			"style": {
 				"navigationBarTitleText": "博古知今"
 			}
@@ -23,6 +23,10 @@
 		}
 	    ,{
             "path" : "pages/shi/details",
+            "style" : {"navigationBarTitleText": "古诗"}
+        }
+        ,{
+            "path" : "pages/imporant/details",
             "style" : {}
         }
     ],

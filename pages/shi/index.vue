@@ -151,7 +151,6 @@
 				}
 			},
 			toDetails(id){
-				console.log(id)
 				uni.navigateTo({
 					url:'./details?id='+id
 				})

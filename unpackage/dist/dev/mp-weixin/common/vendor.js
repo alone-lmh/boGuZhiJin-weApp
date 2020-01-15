@@ -1528,7 +1528,7 @@ uni$1;exports.default = _default;
 
 /***/ }),
 
-/***/ 105:
+/***/ 110:
 /*!**************************************************************!*\
   !*** D:/weiXin-app/weApp-test/components/uni-icons/icons.js ***!
   \**************************************************************/
@@ -7704,19 +7704,50 @@ internalMixin(Vue);
 
 /***/ }),
 
-/***/ 21:
+/***/ 29:
 /*!**********************************************************!*\
   !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
   \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! regenerator-runtime */ 22);
+module.exports = __webpack_require__(/*! regenerator-runtime */ 30);
 
 
 /***/ }),
 
-/***/ 22:
+/***/ 3:
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
+/***/ 30:
 /*!************************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
   \************************************************************/
@@ -7747,7 +7778,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(/*! ./runtime */ 23);
+module.exports = __webpack_require__(/*! ./runtime */ 31);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -7764,7 +7795,7 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 23:
+/***/ 31:
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
   \*****************************************************/
@@ -8496,7 +8527,7 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 24:
+/***/ 32:
 /*!****************************************************!*\
   !*** D:/weiXin-app/weApp-test/utils/jinrishici.js ***!
   \****************************************************/
@@ -8564,37 +8595,6 @@ var getTokenAndDo = function getTokenAndDo(callback) {
 
 module.exports = {
   load: load };
-
-/***/ }),
-
-/***/ 3:
-/*!***********************************!*\
-  !*** (webpack)/buildin/global.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || new Function("return this")();
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
 
 /***/ }),
 
@@ -9516,7 +9516,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@^2.0.0-alpha-24420191128001","_id"
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/shi/index": { "navigationBarTitleText": "博古知今", "usingComponents": { "uni-notice-bar": "/components/uni-notice-bar/uni-notice-bar", "uni-popup": "/components/uni-popup/uni-popup", "uni-search-bar": "/components/uni-search-bar/uni-search-bar", "uni-list": "/components/uni-list/uni-list", "uni-list-item": "/components/uni-list-item/uni-list-item", "sib-list": "/components/sib-list/sib-list" } }, "pages/imporant/index": { "navigationBarTitleText": "博古知今", "usingComponents": {} }, "pages/movies/index": { "navigationBarTitleText": "博古知今", "usingComponents": {} }, "pages/news/index": { "navigationBarTitleText": "博古知今", "usingComponents": {} }, "pages/shi/details": { "usingComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "white", "navigationBarTitleText": "博古知今", "navigationBarBackgroundColor": "#000", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/imporant/index": { "navigationBarTitleText": "博古知今" }, "pages/shi/index": { "navigationBarTitleText": "博古知今" }, "pages/movies/index": { "navigationBarTitleText": "博古知今" }, "pages/news/index": { "navigationBarTitleText": "博古知今" }, "pages/shi/details": { "navigationBarTitleText": "古诗" }, "pages/imporant/details": {} }, "globalStyle": { "navigationBarTextStyle": "white", "navigationBarTitleText": "博古知今", "navigationBarBackgroundColor": "#000", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 

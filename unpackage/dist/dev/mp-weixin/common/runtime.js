@@ -104,11 +104,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/sib-list/sib-list":1,"components/uni-list-item/uni-list-item":1,"components/uni-list/uni-list":1,"components/uni-notice-bar/uni-notice-bar":1,"components/uni-popup/uni-popup":1,"components/uni-search-bar/uni-search-bar":1,"components/uni-icons/uni-icons":1,"components/uni-badge/uni-badge":1,"components/uni-transition/uni-transition":1};
+/******/ 		var cssChunks = {"components/uni-list-item/uni-list-item":1,"components/uni-list/uni-list":1,"components/sib-list/sib-list":1,"components/uni-notice-bar/uni-notice-bar":1,"components/uni-popup/uni-popup":1,"components/uni-search-bar/uni-search-bar":1,"components/uni-icons/uni-icons":1,"components/uni-badge/uni-badge":1,"components/uni-transition/uni-transition":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/sib-list/sib-list":"components/sib-list/sib-list","components/uni-list-item/uni-list-item":"components/uni-list-item/uni-list-item","components/uni-list/uni-list":"components/uni-list/uni-list","components/uni-notice-bar/uni-notice-bar":"components/uni-notice-bar/uni-notice-bar","components/uni-popup/uni-popup":"components/uni-popup/uni-popup","components/uni-search-bar/uni-search-bar":"components/uni-search-bar/uni-search-bar","components/uni-icons/uni-icons":"components/uni-icons/uni-icons","components/uni-badge/uni-badge":"components/uni-badge/uni-badge","components/uni-transition/uni-transition":"components/uni-transition/uni-transition"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/uni-list-item/uni-list-item":"components/uni-list-item/uni-list-item","components/uni-list/uni-list":"components/uni-list/uni-list","components/sib-list/sib-list":"components/sib-list/sib-list","components/uni-notice-bar/uni-notice-bar":"components/uni-notice-bar/uni-notice-bar","components/uni-popup/uni-popup":"components/uni-popup/uni-popup","components/uni-search-bar/uni-search-bar":"components/uni-search-bar/uni-search-bar","components/uni-icons/uni-icons":"components/uni-icons/uni-icons","components/uni-badge/uni-badge":"components/uni-badge/uni-badge","components/uni-transition/uni-transition":"components/uni-transition/uni-transition"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

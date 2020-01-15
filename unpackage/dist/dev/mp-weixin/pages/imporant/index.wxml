@@ -1,1 +1,1 @@
-<view></view>
+<view id="important"><picker mode="date" data-event-opts="{{[['change',[['change',['$event']]]]]}}" bindchange="__e"><text class="choose">{{"选择日期："+date}}</text></picker><uni-list class="list" vue-id="1" bind:__l="__l" vue-slots="{{['default']}}"><block wx:for="{{list}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id"><uni-list-item vue-id="{{('2-'+__i0__)+','+('1')}}" title="{{item.title}}" data-event-opts="{{[['^click',[['toDetails',['$0'],[[['list','id',item.id,'id']]]]]]]}}" bind:click="__e" bind:__l="__l"></uni-list-item></block></uni-list></view>
