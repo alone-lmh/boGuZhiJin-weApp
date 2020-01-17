@@ -1,12 +1,13 @@
 {
   "pages": [
-    "pages/news/index",
-    "pages/imporant/index",
     "pages/shi/index",
+    "pages/imporant/index",
+    "pages/news/index",
     "pages/movies/index",
     "pages/shi/details",
     "pages/imporant/details",
-    "pages/news/details"
+    "pages/news/details",
+    "pages/movies/details"
   ],
   "subPackages": [],
   "window": {
@@ -16,7 +17,7 @@
     "backgroundColor": "#F8F8F8"
   },
   "tabBar": {
-    "color": "#eee",
+    "color": "#aaa",
     "selectedColor": "#fff",
     "backgroundColor": "#000",
     "borderStyle": "black",

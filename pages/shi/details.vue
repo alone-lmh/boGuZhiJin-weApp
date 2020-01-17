@@ -30,7 +30,7 @@
 				const that = this;
 				uni.request({
 					url: "http://www.codestock.club/tang/api/poem/getPoemById/" + id,
-					timeout: 5000,
+					timeout: 8000,
 					success(res) {
 						that.details = res.data;
 						that.loadEnd = true;

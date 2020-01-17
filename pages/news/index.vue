@@ -32,6 +32,7 @@
 				const that = this;
 				uni.request({
 					url: "http://v1.alapi.cn/api/new/toutiao?start=" + page + "&num=10",
+					timeout: 8000,
 					success(res) {
 						if(that.list.length==0){
 							that.list=res.data.data

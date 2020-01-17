@@ -50,6 +50,7 @@
 				const that = this;
 				uni.request({
 					url: 'http://www.jiahengfei.cn:33550/port/history?dispose=easy&key=jiahengfei&month=' + month + '&day=' + day,
+					timeout: 8000,
 					success(res) {
 						that.list = res.data.data
 					},

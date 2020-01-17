@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "博古知今",
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-segmented-control": "/components/uni-segmented-control/uni-segmented-control",
+    "sib-list": "/components/sib-list/sib-list"
+  }
 }

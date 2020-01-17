@@ -1528,112 +1528,6 @@ uni$1;exports.default = _default;
 
 /***/ }),
 
-/***/ 110:
-/*!**************************************************************!*\
-  !*** D:/weiXin-app/weApp-test/components/uni-icons/icons.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
-  'contact': "\uE100",
-  'person': "\uE101",
-  'personadd': "\uE102",
-  'contact-filled': "\uE130",
-  'person-filled': "\uE131",
-  'personadd-filled': "\uE132",
-  'phone': "\uE200",
-  'email': "\uE201",
-  'chatbubble': "\uE202",
-  'chatboxes': "\uE203",
-  'phone-filled': "\uE230",
-  'email-filled': "\uE231",
-  'chatbubble-filled': "\uE232",
-  'chatboxes-filled': "\uE233",
-  'weibo': "\uE260",
-  'weixin': "\uE261",
-  'pengyouquan': "\uE262",
-  'chat': "\uE263",
-  'qq': "\uE264",
-  'videocam': "\uE300",
-  'camera': "\uE301",
-  'mic': "\uE302",
-  'location': "\uE303",
-  'mic-filled': "\uE332",
-  'speech': "\uE332",
-  'location-filled': "\uE333",
-  'micoff': "\uE360",
-  'image': "\uE363",
-  'map': "\uE364",
-  'compose': "\uE400",
-  'trash': "\uE401",
-  'upload': "\uE402",
-  'download': "\uE403",
-  'close': "\uE404",
-  'redo': "\uE405",
-  'undo': "\uE406",
-  'refresh': "\uE407",
-  'star': "\uE408",
-  'plus': "\uE409",
-  'minus': "\uE410",
-  'circle': "\uE411",
-  'checkbox': "\uE411",
-  'close-filled': "\uE434",
-  'clear': "\uE434",
-  'refresh-filled': "\uE437",
-  'star-filled': "\uE438",
-  'plus-filled': "\uE439",
-  'minus-filled': "\uE440",
-  'circle-filled': "\uE441",
-  'checkbox-filled': "\uE442",
-  'closeempty': "\uE460",
-  'refreshempty': "\uE461",
-  'reload': "\uE462",
-  'starhalf': "\uE463",
-  'spinner': "\uE464",
-  'spinner-cycle': "\uE465",
-  'search': "\uE466",
-  'plusempty': "\uE468",
-  'forward': "\uE470",
-  'back': "\uE471",
-  'left-nav': "\uE471",
-  'checkmarkempty': "\uE472",
-  'home': "\uE500",
-  'navigate': "\uE501",
-  'gear': "\uE502",
-  'paperplane': "\uE503",
-  'info': "\uE504",
-  'help': "\uE505",
-  'locked': "\uE506",
-  'more': "\uE507",
-  'flag': "\uE508",
-  'home-filled': "\uE530",
-  'gear-filled': "\uE532",
-  'info-filled': "\uE534",
-  'help-filled': "\uE535",
-  'more-filled': "\uE537",
-  'settings': "\uE560",
-  'list': "\uE562",
-  'bars': "\uE563",
-  'loop': "\uE565",
-  'paperclip': "\uE567",
-  'eye': "\uE568",
-  'arrowup': "\uE580",
-  'arrowdown': "\uE581",
-  'arrowleft': "\uE582",
-  'arrowright': "\uE583",
-  'arrowthinup': "\uE584",
-  'arrowthindown': "\uE585",
-  'arrowthinleft': "\uE586",
-  'arrowthinright': "\uE587",
-  'pulldown': "\uE588",
-  'closefill': "\uE589",
-  'sound': "\uE590",
-  'scan': "\uE612" };exports.default = _default;
-
-/***/ }),
-
 /***/ 14:
 /*!********************************************************************!*\
   !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
@@ -1738,6 +1632,112 @@ function normalizeComponent (
   }
 }
 
+
+/***/ }),
+
+/***/ 144:
+/*!**************************************************************!*\
+  !*** D:/weiXin-app/weApp-test/components/uni-icons/icons.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  'contact': "\uE100",
+  'person': "\uE101",
+  'personadd': "\uE102",
+  'contact-filled': "\uE130",
+  'person-filled': "\uE131",
+  'personadd-filled': "\uE132",
+  'phone': "\uE200",
+  'email': "\uE201",
+  'chatbubble': "\uE202",
+  'chatboxes': "\uE203",
+  'phone-filled': "\uE230",
+  'email-filled': "\uE231",
+  'chatbubble-filled': "\uE232",
+  'chatboxes-filled': "\uE233",
+  'weibo': "\uE260",
+  'weixin': "\uE261",
+  'pengyouquan': "\uE262",
+  'chat': "\uE263",
+  'qq': "\uE264",
+  'videocam': "\uE300",
+  'camera': "\uE301",
+  'mic': "\uE302",
+  'location': "\uE303",
+  'mic-filled': "\uE332",
+  'speech': "\uE332",
+  'location-filled': "\uE333",
+  'micoff': "\uE360",
+  'image': "\uE363",
+  'map': "\uE364",
+  'compose': "\uE400",
+  'trash': "\uE401",
+  'upload': "\uE402",
+  'download': "\uE403",
+  'close': "\uE404",
+  'redo': "\uE405",
+  'undo': "\uE406",
+  'refresh': "\uE407",
+  'star': "\uE408",
+  'plus': "\uE409",
+  'minus': "\uE410",
+  'circle': "\uE411",
+  'checkbox': "\uE411",
+  'close-filled': "\uE434",
+  'clear': "\uE434",
+  'refresh-filled': "\uE437",
+  'star-filled': "\uE438",
+  'plus-filled': "\uE439",
+  'minus-filled': "\uE440",
+  'circle-filled': "\uE441",
+  'checkbox-filled': "\uE442",
+  'closeempty': "\uE460",
+  'refreshempty': "\uE461",
+  'reload': "\uE462",
+  'starhalf': "\uE463",
+  'spinner': "\uE464",
+  'spinner-cycle': "\uE465",
+  'search': "\uE466",
+  'plusempty': "\uE468",
+  'forward': "\uE470",
+  'back': "\uE471",
+  'left-nav': "\uE471",
+  'checkmarkempty': "\uE472",
+  'home': "\uE500",
+  'navigate': "\uE501",
+  'gear': "\uE502",
+  'paperplane': "\uE503",
+  'info': "\uE504",
+  'help': "\uE505",
+  'locked': "\uE506",
+  'more': "\uE507",
+  'flag': "\uE508",
+  'home-filled': "\uE530",
+  'gear-filled': "\uE532",
+  'info-filled': "\uE534",
+  'help-filled': "\uE535",
+  'more-filled': "\uE537",
+  'settings': "\uE560",
+  'list': "\uE562",
+  'bars': "\uE563",
+  'loop': "\uE565",
+  'paperclip': "\uE567",
+  'eye': "\uE568",
+  'arrowup': "\uE580",
+  'arrowdown': "\uE581",
+  'arrowleft': "\uE582",
+  'arrowright': "\uE583",
+  'arrowthinup': "\uE584",
+  'arrowthindown': "\uE585",
+  'arrowthinleft': "\uE586",
+  'arrowthinright': "\uE587",
+  'pulldown': "\uE588",
+  'closefill': "\uE589",
+  'sound': "\uE590",
+  'scan': "\uE612" };exports.default = _default;
 
 /***/ }),
 
@@ -7704,18 +7704,6 @@ internalMixin(Vue);
 
 /***/ }),
 
-/***/ 29:
-/*!**********************************************************!*\
-  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! regenerator-runtime */ 30);
-
-
-/***/ }),
-
 /***/ 3:
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -7747,7 +7735,31 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 30:
+/***/ 4:
+/*!*******************************************!*\
+  !*** D:/weiXin-app/weApp-test/pages.json ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/***/ }),
+
+/***/ 45:
+/*!**********************************************************!*\
+  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! regenerator-runtime */ 46);
+
+
+/***/ }),
+
+/***/ 46:
 /*!************************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
   \************************************************************/
@@ -7778,7 +7790,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(/*! ./runtime */ 31);
+module.exports = __webpack_require__(/*! ./runtime */ 47);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -7795,7 +7807,7 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 31:
+/***/ 47:
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
   \*****************************************************/
@@ -8527,7 +8539,7 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 32:
+/***/ 48:
 /*!****************************************************!*\
   !*** D:/weiXin-app/weApp-test/utils/jinrishici.js ***!
   \****************************************************/
@@ -8595,18 +8607,6 @@ var getTokenAndDo = function getTokenAndDo(callback) {
 
 module.exports = {
   load: load };
-
-/***/ }),
-
-/***/ 4:
-/*!*******************************************!*\
-  !*** D:/weiXin-app/weApp-test/pages.json ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
 
 /***/ }),
 
@@ -9516,7 +9516,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@^2.0.0-alpha-24420191128001","_id"
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/imporant/index": { "navigationBarTitleText": "博古知今", "usingComponents": { "uni-list": "/components/uni-list/uni-list", "uni-list-item": "/components/uni-list-item/uni-list-item" } }, "pages/shi/index": { "navigationBarTitleText": "博古知今", "usingComponents": { "uni-notice-bar": "/components/uni-notice-bar/uni-notice-bar", "uni-popup": "/components/uni-popup/uni-popup", "uni-search-bar": "/components/uni-search-bar/uni-search-bar", "uni-list": "/components/uni-list/uni-list", "uni-list-item": "/components/uni-list-item/uni-list-item", "sib-list": "/components/sib-list/sib-list" } }, "pages/movies/index": { "navigationBarTitleText": "博古知今", "usingComponents": {} }, "pages/news/index": { "navigationBarTitleText": "博古知今", "usingComponents": { "uni-list": "/components/uni-list/uni-list", "uni-list-item": "/components/uni-list-item/uni-list-item", "sib-list": "/components/sib-list/sib-list" } }, "pages/shi/details": { "navigationBarTitleText": "诗词歌赋", "usingComponents": {} }, "pages/imporant/details": { "navigationBarTitleText": "古今要事", "usingComponents": {} }, "pages/news/details": { "usingComponents": {} } }, "globalStyle": { "navigationBarTextStyle": "white", "navigationBarTitleText": "博古知今", "navigationBarBackgroundColor": "#000", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/movies/index": { "navigationBarTitleText": "博古知今", "usingComponents": { "uni-segmented-control": "/components/uni-segmented-control/uni-segmented-control", "sib-list": "/components/sib-list/sib-list" } }, "pages/news/index": { "navigationBarTitleText": "博古知今", "usingComponents": { "uni-list": "/components/uni-list/uni-list", "uni-list-item": "/components/uni-list-item/uni-list-item", "sib-list": "/components/sib-list/sib-list" } }, "pages/imporant/index": { "navigationBarTitleText": "博古知今", "usingComponents": { "uni-list": "/components/uni-list/uni-list", "uni-list-item": "/components/uni-list-item/uni-list-item" } }, "pages/shi/index": { "navigationBarTitleText": "博古知今", "usingComponents": { "uni-notice-bar": "/components/uni-notice-bar/uni-notice-bar", "uni-popup": "/components/uni-popup/uni-popup", "uni-search-bar": "/components/uni-search-bar/uni-search-bar", "uni-list": "/components/uni-list/uni-list", "uni-list-item": "/components/uni-list-item/uni-list-item", "sib-list": "/components/sib-list/sib-list" } }, "pages/shi/details": { "navigationBarTitleText": "诗词歌赋", "usingComponents": {} }, "pages/imporant/details": { "navigationBarTitleText": "古今要事", "usingComponents": {} }, "pages/news/details": { "navigationBarTitleText": "新闻热点", "usingComponents": {} }, "pages/movies/details": { "navigationBarTitleText": "影视之家", "usingComponents": { "uni-tag": "/components/uni-tag/uni-tag", "robby-tags": "/components/robby-tags/robby-tags" } } }, "globalStyle": { "navigationBarTextStyle": "white", "navigationBarTitleText": "博古知今", "navigationBarBackgroundColor": "#000", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 

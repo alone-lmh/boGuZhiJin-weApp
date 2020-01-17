@@ -1,0 +1,46 @@
+
+#movies {
+	height: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+}
+.top text{
+	font-size: 24rpx!important;
+}
+.content {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	overflow: auto;
+}
+text {
+	display: block
+}
+.cell {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding: 0.5em 1em 0;
+	border-bottom: 1px #eee solid;
+}
+cover-image {
+	width: 25%;
+}
+.cell .content {
+	padding-left: 1em;
+}
+.content text {
+	padding-bottom: 0.5em;
+}
+.other {
+	overflow: hidden;
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+

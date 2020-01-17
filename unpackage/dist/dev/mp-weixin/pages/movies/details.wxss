@@ -1,0 +1,83 @@
+
+.movieDetails {
+	padding: 0.5em 0;
+}
+text {
+	display: block
+}
+.flex {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+}
+.flex cell {
+	width: 30%;
+}
+cover-image {
+	height: auto;
+}
+.fname {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	white-space: nowrap;
+}
+.title {
+	text-align: center;
+	font-weight: bold;
+	padding: 0.5em;
+}
+.tip {
+	color: #333;
+	font-weight: bold;
+	padding: 0.5em 0.5em 0.2em;
+}
+.name {
+	text-align: center;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.content {
+	text-indent: 2em;
+	padding: 0 0.6em;
+}
+.pannel {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	margin-bottom: 0.6em;
+	padding: 0.5em;
+	background: #fafafa;
+}
+.pannel cover-image {
+	width: 2em;
+	border-radius: 1em;
+	margin-left: 2em;
+}
+.pname {
+	line-height: 2em;
+	margin-left: 1em;
+}
+.ptitle {
+	text-align: center;
+	color: #333;
+	font-weight: bold;
+	width: 100%;
+	padding-top:0.5em;
+}
+.pcontent {
+	padding:0.5em 0;
+	width: 100%;
+	text-indent: 2em;
+	overflow: hidden;
+}
+

@@ -22,8 +22,8 @@
 				const that = this;
 				uni.request({
 					url: 'http://v1.alapi.cn/api/new/detail?docid=' + id,
+					timeout: 8000,
 					success(res) {
-						console.log(res)
 						that.details = res.data.data[id];
 						that.loadEnd = true;
 					},

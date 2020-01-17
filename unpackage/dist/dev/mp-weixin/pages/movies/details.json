@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "影视之家",
+  "usingComponents": {
+    "uni-tag": "/components/uni-tag/uni-tag",
+    "robby-tags": "/components/robby-tags/robby-tags"
+  }
+}
