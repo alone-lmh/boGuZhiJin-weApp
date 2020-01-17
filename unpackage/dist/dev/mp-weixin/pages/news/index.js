@@ -155,15 +155,20 @@ __webpack_require__.r(__webpack_exports__);
     loadData: function loadData(page) {
       var that = this;
       uni.request({
-        url: "http://v1.alapi.cn/api/new/toutiao?start=" + page + "&num=10",
+        url: "https://api.cat-shop.penkuoer.com/api/v2/proxy",
+        method: 'GET',
         timeout: 8000,
+        data: {
+          url: "http://v1.alapi.cn/api/new/toutiao?start=" + page + "&num=15",
+          method: 'GET' },
+
         success: function success(res) {
           if (that.list.length == 0) {
             that.list = res.data.data;
           } else {
             var obj = res.data.data;
             var arr = [];
-            for (var i = (page - 1) * 10; i < page * 10 - 1; i++) {
+            for (var i = (page - 1) * 15; i < page * 15 - 1; i++) {
               arr.push(obj[i]);
             }
             var result = arr.filter(function (v) {return v !== undefined;});
@@ -174,6 +179,26 @@ __webpack_require__.r(__webpack_exports__);
           console.log(err);
         } });
 
+      // uni.request({
+      // 	url: "http://v1.alapi.cn/api/new/toutiao?start=" + page + "&num=15",
+      // 	timeout: 8000,
+      // 	success(res) {
+      // 		if(that.list.length==0){
+      // 			that.list=res.data.data
+      // 		}else{
+      // 			let obj=res.data.data;
+      // 			let arr =[];
+      // 			for(let i=(page-1)*15;i<page*15-1;i++){
+      // 				arr.push(obj[i])
+      // 			}
+      // 			let result= arr.filter((v)=>{return v!==undefined})
+      // 			that.list=[...that.list,...result]
+      // 		}
+      // 	},
+      // 	fail(err) {
+      // 		console.log(err)
+      // 	}
+      // })
     },
     touchstart: function touchstart(e) {
       this.$refs.sibList.refreshStart(e);

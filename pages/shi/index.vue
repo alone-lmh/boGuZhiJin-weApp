@@ -53,7 +53,7 @@
 				this.keyWord=options.name;
 				this.loadData({
 				page: 1,
-				size: 10,
+				size: 15,
 				keyWord:this.keyWord
 			})
 			}
@@ -64,7 +64,7 @@
 			})
 			this.loadData({
 				page: 1,
-				size: 10
+				size: 15
 			})
 		},
 		methods: {
@@ -74,12 +74,16 @@
 			loadData(data) {
 				const that = this;
 				uni.request({
-					url: "http://www.codestock.club/tang/api/poem/getPoemInfo",
-					data,
+					url: "https://api.cat-shop.penkuoer.com/api/v2/proxy",
 					method: 'POST',
 					timeout: 8000,
-					header: {
-						"content-type": "application/x-www-form-urlencoded"
+					data: {
+						headers: {
+							"content-type": "application/x-www-form-urlencoded",
+						},
+						url: 'http://www.codestock.club/tang/api/poem/getPoemInfo',
+						data,
+						method: 'POST'
 					},
 					success(res) {
 						that.shi = [...that.shi, ...res.data.list]
@@ -92,13 +96,32 @@
 						console.log(err)
 					}
 				})
+				// uni.request({
+				// 	url: "http://www.codestock.club/tang/api/poem/getPoemInfo",
+				// 	data,
+				// 	method: 'POST',
+				// 	timeout: 8000,
+				// 	header: {
+				// 		"content-type": "application/x-www-form-urlencoded"
+				// 	},
+				// 	success(res) {
+				// 		that.shi = [...that.shi, ...res.data.list]
+				// 		that.pages = res.data.pages
+				// 		if(that.pages==that.page){
+				// 			that.over='没有更多了'
+				// 		}
+				// 	},
+				// 	fail(err) {
+				// 		console.log(err)
+				// 	}
+				// })
 			},
 			loadMore(keyWord) {
 				if (this.page < this.pages) {
 					this.page += 1;
 					this.loadData({
 						page: this.page,
-						size: 10,
+						size: 15,
 						keyWord
 					})
 				}
@@ -106,11 +129,12 @@
 			clear(value) {
 				if (value) {
 					if (value.value == '') {
+						this.page=1;
 						this.shi = [];
 						this.keyWord = '';
 						this.loadData({
 							page: 1,
-							size: 10,
+							size: 15,
 							keyWord: value.value
 						})
 					}
@@ -119,11 +143,12 @@
 			search(value) {
 				if (value) {
 					if (value.value) {
+						this.page=1;
 						this.shi = [];
 						this.keyWord = value.value;
 						this.loadData({
 							page: 1,
-							size: 10,
+							size: 15,
 							keyWord: value.value
 						})
 					}
@@ -181,8 +206,8 @@
 	}
 
 	.topShi {
-		width: 80%;
-		max-height: 85%;
+		width: 75%;
+		max-height:350px;
 		overflow: auto;
 		padding: 1em;
 		background-color: #fff;

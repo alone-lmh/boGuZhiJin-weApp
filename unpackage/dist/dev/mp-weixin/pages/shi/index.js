@@ -177,7 +177,7 @@ var _jinrishici = _interopRequireDefault(__webpack_require__(/*! @/utils/jinrish
       this.keyWord = options.name;
       this.loadData({
         page: 1,
-        size: 10,
+        size: 15,
         keyWord: this.keyWord });
 
     }
@@ -188,7 +188,7 @@ var _jinrishici = _interopRequireDefault(__webpack_require__(/*! @/utils/jinrish
               });
               this.loadData({
                 page: 1,
-                size: 10 });case 2:case "end":return _context.stop();}}}, _callee, this);}));function created() {return _created.apply(this, arguments);}return created;}(),
+                size: 15 });case 2:case "end":return _context.stop();}}}, _callee, this);}));function created() {return _created.apply(this, arguments);}return created;}(),
 
 
   methods: {
@@ -198,12 +198,16 @@ var _jinrishici = _interopRequireDefault(__webpack_require__(/*! @/utils/jinrish
     loadData: function loadData(data) {
       var that = this;
       uni.request({
-        url: "http://www.codestock.club/tang/api/poem/getPoemInfo",
-        data: data,
+        url: "https://api.cat-shop.penkuoer.com/api/v2/proxy",
         method: 'POST',
         timeout: 8000,
-        header: {
-          "content-type": "application/x-www-form-urlencoded" },
+        data: {
+          headers: {
+            "content-type": "application/x-www-form-urlencoded" },
+
+          url: 'http://www.codestock.club/tang/api/poem/getPoemInfo',
+          data: data,
+          method: 'POST' },
 
         success: function success(res) {
           that.shi = [].concat(_toConsumableArray(that.shi), _toConsumableArray(res.data.list));
@@ -216,13 +220,32 @@ var _jinrishici = _interopRequireDefault(__webpack_require__(/*! @/utils/jinrish
           console.log(err);
         } });
 
+      // uni.request({
+      // 	url: "http://www.codestock.club/tang/api/poem/getPoemInfo",
+      // 	data,
+      // 	method: 'POST',
+      // 	timeout: 8000,
+      // 	header: {
+      // 		"content-type": "application/x-www-form-urlencoded"
+      // 	},
+      // 	success(res) {
+      // 		that.shi = [...that.shi, ...res.data.list]
+      // 		that.pages = res.data.pages
+      // 		if(that.pages==that.page){
+      // 			that.over='没有更多了'
+      // 		}
+      // 	},
+      // 	fail(err) {
+      // 		console.log(err)
+      // 	}
+      // })
     },
     loadMore: function loadMore(keyWord) {
       if (this.page < this.pages) {
         this.page += 1;
         this.loadData({
           page: this.page,
-          size: 10,
+          size: 15,
           keyWord: keyWord });
 
       }
@@ -230,11 +253,12 @@ var _jinrishici = _interopRequireDefault(__webpack_require__(/*! @/utils/jinrish
     clear: function clear(value) {
       if (value) {
         if (value.value == '') {
+          this.page = 1;
           this.shi = [];
           this.keyWord = '';
           this.loadData({
             page: 1,
-            size: 10,
+            size: 15,
             keyWord: value.value });
 
         }
@@ -243,11 +267,12 @@ var _jinrishici = _interopRequireDefault(__webpack_require__(/*! @/utils/jinrish
     search: function search(value) {
       if (value) {
         if (value.value) {
+          this.page = 1;
           this.shi = [];
           this.keyWord = value.value;
           this.loadData({
             page: 1,
-            size: 10,
+            size: 15,
             keyWord: value.value });
 
         }

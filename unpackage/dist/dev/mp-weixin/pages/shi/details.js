@@ -153,8 +153,12 @@ var _default =
     loadData: function loadData(id) {
       var that = this;
       uni.request({
-        url: "http://www.codestock.club/tang/api/poem/getPoemById/" + id,
+        url: "https://api.cat-shop.penkuoer.com/api/v2/proxy",
+        method: 'POST',
         timeout: 8000,
+        data: {
+          url: "http://www.codestock.club/tang/api/poem/getPoemById/" + id },
+
         success: function success(res) {
           that.details = res.data;
           that.loadEnd = true;
@@ -163,6 +167,17 @@ var _default =
           console.log(err);
         } });
 
+      // uni.request({
+      // 	url: "http://www.codestock.club/tang/api/poem/getPoemById/" + id,
+      // 	timeout: 8000,
+      // 	success(res) {
+      // 		that.details = res.data;
+      // 		that.loadEnd = true;
+      // 	},
+      // 	fail(err) {
+      // 		console.log(err)
+      // 	}
+      // })
     },
     find: function find(name) {
       uni.reLaunch({

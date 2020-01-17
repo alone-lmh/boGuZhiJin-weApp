@@ -29,8 +29,12 @@
 			loadData(id) {
 				const that = this;
 				uni.request({
-					url: "http://www.codestock.club/tang/api/poem/getPoemById/" + id,
+					url: "https://api.cat-shop.penkuoer.com/api/v2/proxy",
+					method: 'POST',
 					timeout: 8000,
+					data: {
+						url: "http://www.codestock.club/tang/api/poem/getPoemById/" + id
+					},
 					success(res) {
 						that.details = res.data;
 						that.loadEnd = true;
@@ -39,6 +43,17 @@
 						console.log(err)
 					}
 				})
+				// uni.request({
+				// 	url: "http://www.codestock.club/tang/api/poem/getPoemById/" + id,
+				// 	timeout: 8000,
+				// 	success(res) {
+				// 		that.details = res.data;
+				// 		that.loadEnd = true;
+				// 	},
+				// 	fail(err) {
+				// 		console.log(err)
+				// 	}
+				// })
 			},
 			find(name) {
 				uni.reLaunch({
@@ -52,7 +67,7 @@
 <style>
 	#shiDetails {
 		height: 100%;
-		background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579063894132&di=2e9a140e13e98600feda9702cade7eb4&imgtype=0&src=http%3A%2F%2Fpic79.nipic.com%2Ffile%2F20151005%2F21022608_164420192000_2.jpg");
+		background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579259152652&di=4dcb99e48c3f07ec3a11187c333e386e&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201505%2F01%2F20150501223032_XAtCi.jpeg");
 		background-size: 100% 100%;
 		padding:0 0.5em;
 		overflow: auto;

@@ -161,7 +161,7 @@ var _default = {
 
     scrollHeight: {
       type: [String, String],
-      default: '500px' },
+      default: '780px' },
 
     isNoList: {
       type: [Boolean, String],

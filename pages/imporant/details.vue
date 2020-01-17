@@ -22,8 +22,12 @@
 			loadData(id) {
 				const that = this;
 				uni.request({
-					url: 'http://www.jiahengfei.cn:33550/port/history?dispose=select&key=jiahengfei&id=' + id,
+					url: "https://api.cat-shop.penkuoer.com/api/v2/proxy",
+					method: 'POST',
 					timeout: 8000,
+					data: {
+						url: 'http://www.jiahengfei.cn:33550/port/history?dispose=select&key=jiahengfei&id=' + id
+					},
 					success(res) {
 						that.details = res.data.data;
 						if(!that.details.pic){
@@ -35,6 +39,20 @@
 						console.log(err)
 					}
 				})
+				// uni.request({
+				// 	url: 'http://www.jiahengfei.cn:33550/port/history?dispose=select&key=jiahengfei&id=' + id,
+				// 	timeout: 8000,
+				// 	success(res) {
+				// 		that.details = res.data.data;
+				// 		if(!that.details.pic){
+				// 			that.details.pic='https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=606394262,1008040175&fm=26&gp=0.jpg'
+				// 		}
+				// 		that.loadEnd = true;
+				// 	},
+				// 	fail(err) {
+				// 		console.log(err)
+				// 	}
+				// })
 			}
 		}
 	}

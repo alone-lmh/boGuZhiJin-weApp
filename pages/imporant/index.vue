@@ -49,8 +49,12 @@
 			loadData(month, day) {
 				const that = this;
 				uni.request({
-					url: 'http://www.jiahengfei.cn:33550/port/history?dispose=easy&key=jiahengfei&month=' + month + '&day=' + day,
+					url: "https://api.cat-shop.penkuoer.com/api/v2/proxy",
+					method: 'POST',
 					timeout: 8000,
+					data: {
+						url: 'http://www.jiahengfei.cn:33550/port/history?dispose=easy&key=jiahengfei&month=' + month + '&day=' + day
+					},
 					success(res) {
 						that.list = res.data.data
 					},
@@ -58,6 +62,16 @@
 						console.log(err)
 					}
 				})
+				// uni.request({
+				// 	url: 'http://www.jiahengfei.cn:33550/port/history?dispose=easy&key=jiahengfei&month=' + month + '&day=' + day,
+				// 	timeout: 8000,
+				// 	success(res) {
+				// 		that.list = res.data.data
+				// 	},
+				// 	fail(err) {
+				// 		console.log(err)
+				// 	}
+				// })
 			},
 			toDetails(id){
 				console.log(id)

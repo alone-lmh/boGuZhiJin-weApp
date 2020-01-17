@@ -21,8 +21,13 @@
 			loadData(id) {
 				const that = this;
 				uni.request({
-					url: 'http://v1.alapi.cn/api/new/detail?docid=' + id,
+					url: "https://api.cat-shop.penkuoer.com/api/v2/proxy",
+					method: 'GET',
 					timeout: 8000,
+					data: {
+						url: 'http://v1.alapi.cn/api/new/detail?docid=' + id,
+						method: 'GET'
+					},
 					success(res) {
 						that.details = res.data.data[id];
 						that.loadEnd = true;
@@ -31,6 +36,17 @@
 						console.log(err)
 					}
 				})
+				// uni.request({
+				// 	url: 'http://v1.alapi.cn/api/new/detail?docid=' + id,
+				// 	timeout: 8000,
+				// 	success(res) {
+				// 		that.details = res.data.data[id];
+				// 		that.loadEnd = true;
+				// 	},
+				// 	fail(err) {
+				// 		console.log(err)
+				// 	}
+				// })
 			}
 		}
 	}

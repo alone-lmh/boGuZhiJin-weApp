@@ -23,8 +23,8 @@ text {
 	display: block;
 }
 .topShi {
-	width: 80%;
-	max-height: 85%;
+	width: 75%;
+	max-height:350px;
 	overflow: auto;
 	padding: 1em;
 	background-color: #fff;

@@ -145,8 +145,13 @@ var _default =
     loadData: function loadData(id) {
       var that = this;
       uni.request({
-        url: 'http://v1.alapi.cn/api/new/detail?docid=' + id,
+        url: "https://api.cat-shop.penkuoer.com/api/v2/proxy",
+        method: 'GET',
         timeout: 8000,
+        data: {
+          url: 'http://v1.alapi.cn/api/new/detail?docid=' + id,
+          method: 'GET' },
+
         success: function success(res) {
           that.details = res.data.data[id];
           that.loadEnd = true;
@@ -155,6 +160,17 @@ var _default =
           console.log(err);
         } });
 
+      // uni.request({
+      // 	url: 'http://v1.alapi.cn/api/new/detail?docid=' + id,
+      // 	timeout: 8000,
+      // 	success(res) {
+      // 		that.details = res.data.data[id];
+      // 		that.loadEnd = true;
+      // 	},
+      // 	fail(err) {
+      // 		console.log(err)
+      // 	}
+      // })
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

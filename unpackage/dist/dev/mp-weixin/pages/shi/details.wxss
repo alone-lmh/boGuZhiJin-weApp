@@ -1,7 +1,7 @@
 
 #shiDetails {
 	height: 100%;
-	background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579063894132&di=2e9a140e13e98600feda9702cade7eb4&imgtype=0&src=http%3A%2F%2Fpic79.nipic.com%2Ffile%2F20151005%2F21022608_164420192000_2.jpg");
+	background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579259152652&di=4dcb99e48c3f07ec3a11187c333e386e&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201505%2F01%2F20150501223032_XAtCi.jpeg");
 	background-size: 100% 100%;
 	padding:0 0.5em;
 	overflow: auto;
