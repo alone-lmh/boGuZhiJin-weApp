@@ -734,7 +734,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -1635,7 +1635,7 @@ function normalizeComponent (
 
 /***/ }),
 
-/***/ 144:
+/***/ 151:
 /*!**************************************************************!*\
   !*** D:/weiXin-app/weApp-test/components/uni-icons/icons.js ***!
   \**************************************************************/
@@ -7223,7 +7223,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -7244,14 +7244,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -7327,7 +7327,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -7704,62 +7704,19 @@ internalMixin(Vue);
 
 /***/ }),
 
-/***/ 3:
-/*!***********************************!*\
-  !*** (webpack)/buildin/global.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || new Function("return this")();
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-
-/***/ 4:
-/*!*******************************************!*\
-  !*** D:/weiXin-app/weApp-test/pages.json ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/***/ }),
-
-/***/ 45:
+/***/ 21:
 /*!**********************************************************!*\
   !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
   \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! regenerator-runtime */ 46);
+module.exports = __webpack_require__(/*! regenerator-runtime */ 22);
 
 
 /***/ }),
 
-/***/ 46:
+/***/ 22:
 /*!************************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
   \************************************************************/
@@ -7790,7 +7747,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(/*! ./runtime */ 47);
+module.exports = __webpack_require__(/*! ./runtime */ 23);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -7807,7 +7764,7 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 47:
+/***/ 23:
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
   \*****************************************************/
@@ -8539,7 +8496,7 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 48:
+/***/ 24:
 /*!****************************************************!*\
   !*** D:/weiXin-app/weApp-test/utils/jinrishici.js ***!
   \****************************************************/
@@ -8607,6 +8564,49 @@ var getTokenAndDo = function getTokenAndDo(callback) {
 
 module.exports = {
   load: load };
+
+/***/ }),
+
+/***/ 3:
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
+/***/ 4:
+/*!*******************************************!*\
+  !*** D:/weiXin-app/weApp-test/pages.json ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 /***/ }),
 
@@ -9516,7 +9516,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@^2.0.0-alpha-24420191128001","_id"
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/movies/index": { "navigationBarTitleText": "博古知今", "usingComponents": { "uni-segmented-control": "/components/uni-segmented-control/uni-segmented-control", "sib-list": "/components/sib-list/sib-list" } }, "pages/news/index": { "navigationBarTitleText": "博古知今", "usingComponents": { "uni-list": "/components/uni-list/uni-list", "uni-list-item": "/components/uni-list-item/uni-list-item", "sib-list": "/components/sib-list/sib-list" } }, "pages/imporant/index": { "navigationBarTitleText": "博古知今", "usingComponents": { "uni-list": "/components/uni-list/uni-list", "uni-list-item": "/components/uni-list-item/uni-list-item" } }, "pages/shi/index": { "navigationBarTitleText": "博古知今", "usingComponents": { "uni-notice-bar": "/components/uni-notice-bar/uni-notice-bar", "uni-popup": "/components/uni-popup/uni-popup", "uni-search-bar": "/components/uni-search-bar/uni-search-bar", "uni-list": "/components/uni-list/uni-list", "uni-list-item": "/components/uni-list-item/uni-list-item", "sib-list": "/components/sib-list/sib-list" } }, "pages/shi/details": { "navigationBarTitleText": "诗词歌赋", "usingComponents": {} }, "pages/imporant/details": { "navigationBarTitleText": "古今要事", "usingComponents": {} }, "pages/news/details": { "navigationBarTitleText": "新闻热点", "usingComponents": {} }, "pages/movies/details": { "navigationBarTitleText": "影视之家", "usingComponents": { "uni-tag": "/components/uni-tag/uni-tag", "robby-tags": "/components/robby-tags/robby-tags" } } }, "globalStyle": { "navigationBarTextStyle": "white", "navigationBarTitleText": "博古知今", "navigationBarBackgroundColor": "#000", "backgroundColor": "#F8F8F8" } };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/shi/index": { "navigationBarTitleText": "博古知今" }, "pages/imporant/index": { "navigationBarTitleText": "博古知今" }, "pages/news/index": { "navigationBarTitleText": "博古知今" }, "pages/movies/index": { "navigationBarTitleText": "博古知今" }, "pages/shi/details": { "navigationBarTitleText": "诗词歌赋" }, "pages/imporant/details": { "navigationBarTitleText": "古今要事" }, "pages/news/details": { "navigationBarTitleText": "新闻热点" }, "pages/movies/details": { "navigationBarTitleText": "影视之家" } }, "globalStyle": { "navigationBarTextStyle": "white", "navigationBarTitleText": "博古知今", "navigationBarBackgroundColor": "#000", "backgroundColor": "#F8F8F8" } };exports.default = _default;
 
 /***/ }),
 

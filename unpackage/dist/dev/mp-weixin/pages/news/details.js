@@ -146,11 +146,10 @@ var _default =
       var that = this;
       uni.request({
         url: "https://api.cat-shop.penkuoer.com/api/v2/proxy",
-        method: 'GET',
+        method: 'POST',
         timeout: 8000,
         data: {
-          url: 'http://v1.alapi.cn/api/new/detail?docid=' + id,
-          method: 'GET' },
+          url: 'http://v1.alapi.cn/api/new/detail?docid=' + id },
 
         success: function success(res) {
           that.details = res.data.data[id];
